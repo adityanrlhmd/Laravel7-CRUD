@@ -1,0 +1,304 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@600&display=swap');
+
+$background: #F6F8FC;
+$primary: #2D9CDB;
+$second: #555555;
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: $background;
+    font-family: 'Nunito Sans';
+}
+
+header {
+    background-color: white;
+    color: black;
+    box-shadow: 4px 4px 9px 1px rgba(133, 133, 133, 0.25);
+
+    .navbar {
+        .container-fluid {
+            width: 78%;
+            color: black;
+
+            .navbar-brand {
+                img {
+                    width: 90px;
+                }
+            }
+
+            .collapse {
+                ul {
+                    li {
+                        a {
+                            color: black;
+                            text-decoration: none;
+                        }
+
+                        .logout {
+                            background-color: $primary;
+                            color: white;
+                        }
+
+                        &:not(:last-child) {
+                            margin-right: 30px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+main {
+    padding-top: 100px;
+
+    .container {
+        width: 78%;
+
+        .table {
+            thead {
+                background-color: rgb(225, 240, 245);
+
+                tr {
+                    th {
+                        padding-top: 15px;
+                        padding-bottom: 15px;
+                        font-weight: 500;
+                        text-align: center;
+                    }
+                }
+            }
+
+            tbody {
+                background-color: white;
+
+                tr {
+                    &:not(:first-child) {
+                        background-color: $background;
+                    }
+
+                    td {
+                        color: $second;
+                        font-size: 14px;
+                        text-align: center;
+                        margin: 0;
+                        padding-top: 20px;
+                        padding-bottom: 0;
+
+                        .selesai {
+                            margin-top: -3px;
+                            background-color: rgb(63, 177, 107);
+                            padding-left: 5px;
+                            padding-right: 5px;
+                            border-radius: 5px;
+
+                            p {
+                                padding-top: 3px;
+                                padding-bottom: 3px;
+                                text-align: center;
+                                color: white;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 576px) {
+    main{
+        .container{
+            width: 90%;
+        }
+    }
+}
+
+footer {
+    img {
+        margin-bottom: -1px;
+    }
+
+    .footer {
+        background-color: $primary;
+
+        .container {
+            width: 78%;
+
+            .wrap1 {
+                // display: grid;
+                // grid-template-columns: 1fr 1fr 1fr;
+
+                .kanan-footer {
+                    .title {
+                        h1 {
+                            font-size: 25px;
+                            color: white;
+                        }
+                    }
+
+                    form {
+                        margin-bottom: 120px;
+
+                        div {
+                            margin-bottom: 10px;
+
+                            label {
+                                color: white;
+                            }
+                        }
+
+                        .btn {
+                            float: right;
+                            margin-top: 25px;
+                            border-radius: 100px;
+                            background-color: $second;
+                            color: white;
+                            padding: 5px 54px;
+                        }
+                    }
+                }
+
+                .kiri-footer {
+                    margin-bottom: 30px;
+
+                    .row {
+                        .col {
+                            display: block;
+                            margin-bottom: 10px;
+
+                            .title {
+                                h1 {
+                                    font-size: 25px;
+                                    color: white;
+                                }
+                            }
+
+                            ul {
+                                li {
+                                    display: flex;
+                                    list-style-type: none;
+                                    align-items: center;
+
+                                    p {
+                                        margin-bottom: 2px;
+                                        font-weight: 300;
+                                        font-size: 15px;
+                                        color: white;
+                                    }
+
+                                    svg {
+                                        margin-right: 7px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and(max-width: 576px) {
+    footer {
+        img {
+            margin-bottom: -1px;
+        }
+
+        .footer {
+            background-color: $primary;
+
+            .container {
+                width: 78%;
+
+                .wrap1 {
+                    // display: grid;
+                    // grid-template-columns: 1fr 1fr 1fr;
+
+                    .kanan-footer {
+                        .title {
+                            h1 {
+                                font-size: 25px;
+                                color: white;
+                            }
+                        }
+
+                        form {
+                            margin-bottom: 120px;
+
+                            div {
+                                margin-bottom: 10px;
+
+                                label {
+                                    color: white;
+                                }
+                            }
+
+                            .btn {
+                                float: right;
+                                width: 100%;
+                                margin-top: 25px;
+                                border-radius: 100px;
+                                background-color: $second;
+                                color: white;
+                                padding: 5px 54px;
+                            }
+                        }
+                    }
+
+                    .kiri-footer {
+                        margin-bottom: 30px;
+
+                        .row {
+                            .col {
+                                display: block;
+                                margin-bottom: 10px;
+
+                                .title {
+                                    h1 {
+                                        font-size: 25px;
+                                        color: white;
+                                    }
+                                }
+
+                                ul {
+                                    li {
+                                        display: flex;
+                                        list-style-type: none;
+                                        align-items: center;
+
+                                        p {
+                                            margin-bottom: 2px;
+                                            font-weight: 300;
+                                            font-size: 15px;
+                                            color: white;
+                                        }
+
+                                        svg {
+                                            margin-right: 7px;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.copyright {
+    background-color: $second;
+
+    p {
+        text-align: center;
+        padding: 20px 0px;
+        margin-bottom: 0;
+        color: white;
+    }
+}

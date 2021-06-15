@@ -1,0 +1,503 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@600&display=swap');
+
+$background: #F6F8FC;
+$primary: #2D9CDB;
+$second: #555555;
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: $background;
+    font-family: 'Nunito Sans';
+}
+
+header {
+    background-color: white;
+    color: black;
+    box-shadow: 4px 4px 9px 1px rgba(133, 133, 133, 0.25);
+
+    .navbar {
+        .container-fluid {
+            width: 78%;
+            color: black;
+
+            .navbar-brand {
+                img {
+                    width: 90px;
+                }
+            }
+
+            .collapse {
+                ul {
+                    li {
+                        a {
+                            color: black;
+                            text-decoration: none;
+                        }
+
+                        .logout {
+                            background-color: $primary;
+                            color: white;
+                        }
+
+                        &:not(:last-child) {
+                            margin-right: 30px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+main {
+    padding-top: 100px;
+
+    .container {
+        width: 78%;
+
+        .row {
+            .kiri {
+                margin-bottom: 30px;
+
+                .card {
+                    padding: 50px;
+                    border: none;
+
+                    .atas {
+                        .wrap {
+                            display: flex;
+                            // justify-content: center;
+
+                            img {
+                                margin: 0 auto;
+                                width: 250px;
+                                margin-bottom: 20px;
+                            }
+                        }
+                    }
+
+                    .card-body {
+                        ul {
+                            list-style-type: none;
+                            padding: 0;
+                            margin-bottom: 120px;
+
+                            li {
+                                margin-bottom: 15px;
+
+                                p {
+                                    margin: 0;
+                                }
+
+                                .label {
+                                    font-size: 14px;
+                                    color: $second;
+                                }
+
+                                .isi {
+                                    font-weight: 600;
+                                }
+                            }
+                        }
+
+                        .btn {
+                            background-color: $primary;
+                            border: 1px solid $primary;
+                            color: white;
+                            width: 100%;
+
+                            &:hover {
+                                background-color: rgba(255, 255, 255, 0);
+                                color: $primary;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .kanan {
+                ul {
+                    list-style-type: none;
+                    padding: 0;
+
+                    li {
+                        margin-bottom: 10px;
+
+                        .card {
+                            padding: 20px;
+                            border: none;
+                            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+
+                            .d-flex {
+                                img {
+                                    width: 60px;
+                                }
+
+                                .text {
+                                    margin-left: 20px;
+
+                                    p {
+                                        margin: 0;
+                                    }
+
+                                    .name {
+                                        font-size: 17px;
+                                    }
+
+                                    label {
+                                        font-size: 14px;
+                                        color: $second;
+                                    }
+                                }
+
+                                .btn-not {
+                                    background-color: $primary;
+                                    border: 1px solid $primary;
+                                    color: white;
+                                    // width: 100%;
+
+                                    &:hover {
+                                        background-color: rgba(255, 255, 255, 0);
+                                        color: $primary;
+                                    }
+                                }
+
+                                .btn-done {
+                                    background-color: rgb(189, 188, 188);
+                                    border: 1px solid rgb(189, 188, 188);
+                                    color: white;
+                                    cursor: default;
+                                    // width: 100%;
+
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 1020px) {
+    main {
+        padding-top: 100px;
+
+        .container {
+            width: 90%;
+
+            .row {
+                .kiri {
+                    margin-bottom: 30px;
+
+                    .card {
+                        padding: 50px;
+                        border: none;
+
+                        .atas {
+                            .wrap {
+                                display: flex;
+                                // justify-content: center;
+
+                                img {
+                                    margin: 0 auto;
+                                    width: 200px;
+                                    margin-bottom: 20px;
+                                }
+                            }
+                        }
+
+                        .card-body {
+                            ul {
+                                list-style-type: none;
+                                padding: 0;
+                                margin-bottom: 120px;
+
+                                li {
+                                    margin-bottom: 15px;
+
+                                    p {
+                                        margin: 0;
+                                    }
+
+                                    .label {
+                                        font-size: 14px;
+                                        color: $second;
+                                    }
+
+                                    .isi {
+                                        font-weight: 600;
+                                    }
+                                }
+                            }
+
+                            .btn {
+                                background-color: $primary;
+                                border: 1px solid $primary;
+                                color: white;
+                                width: 100%;
+
+                                &:hover {
+                                    background-color: rgba(255, 255, 255, 0);
+                                    color: $primary;
+                                }
+                            }
+                        }
+                    }
+                }
+
+                .kanan {
+                    ul {
+                        list-style-type: none;
+                        padding: 0;
+
+                        li {
+                            margin-bottom: 10px;
+
+                            .card {
+                                padding: 20px;
+                                border: none;
+                                box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+
+                                .d-flex {
+                                    img {
+                                        width: 60px;
+                                    }
+
+                                    .text {
+                                        margin-left: 20px;
+
+                                        p {
+                                            margin: 0;
+                                        }
+
+                                        .name {
+                                            font-size: 17px;
+                                        }
+
+                                        label {
+                                            font-size: 14px;
+                                            color: $second;
+                                        }
+                                    }
+
+                                    .btn-not {
+                                        background-color: $primary;
+                                        border: 1px solid $primary;
+                                        color: white;
+                                        font-size: 14px;
+                                        // width: 100%;
+
+                                        &:hover {
+                                            background-color: rgba(255, 255, 255, 0);
+                                            color: $primary;
+                                        }
+                                    }
+
+                                    .btn-done {
+                                        background-color: rgb(189, 188, 188);
+                                        border: 1px solid rgb(189, 188, 188);
+                                        color: white;
+                                        font-size: 14px;
+                                        cursor: default;
+                                        // width: 100%;
+
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+footer {
+    img {
+        margin-bottom: -1px;
+    }
+
+    .footer {
+        background-color: $primary;
+
+        .container {
+            width: 78%;
+
+            .wrap1 {
+                // display: grid;
+                // grid-template-columns: 1fr 1fr 1fr;
+
+                .kanan-footer {
+                    .title {
+                        h1 {
+                            font-size: 25px;
+                            color: white;
+                        }
+                    }
+
+                    form {
+                        margin-bottom: 120px;
+
+                        div {
+                            margin-bottom: 10px;
+
+                            label {
+                                color: white;
+                            }
+                        }
+
+                        .btn {
+                            float: right;
+                            margin-top: 25px;
+                            border-radius: 100px;
+                            background-color: $second;
+                            color: white;
+                            padding: 5px 54px;
+                        }
+                    }
+                }
+
+                .kiri-footer {
+                    margin-bottom: 30px;
+
+                    .row {
+                        .col {
+                            display: block;
+                            margin-bottom: 10px;
+
+                            .title {
+                                h1 {
+                                    font-size: 25px;
+                                    color: white;
+                                }
+                            }
+
+                            ul {
+                                li {
+                                    display: flex;
+                                    list-style-type: none;
+                                    align-items: center;
+
+                                    p {
+                                        margin-bottom: 2px;
+                                        font-weight: 300;
+                                        font-size: 15px;
+                                        color: white;
+                                    }
+
+                                    svg {
+                                        margin-right: 7px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and(max-width: 576px) {
+    footer {
+        img {
+            margin-bottom: -1px;
+        }
+
+        .footer {
+            background-color: $primary;
+
+            .container {
+                width: 78%;
+
+                .wrap1 {
+                    // display: grid;
+                    // grid-template-columns: 1fr 1fr 1fr;
+
+                    .kanan-footer {
+                        .title {
+                            h1 {
+                                font-size: 25px;
+                                color: white;
+                            }
+                        }
+
+                        form {
+                            margin-bottom: 120px;
+
+                            div {
+                                margin-bottom: 10px;
+
+                                label {
+                                    color: white;
+                                }
+                            }
+
+                            .btn {
+                                float: right;
+                                width: 100%;
+                                margin-top: 25px;
+                                border-radius: 100px;
+                                background-color: $second;
+                                color: white;
+                                padding: 5px 54px;
+                            }
+                        }
+                    }
+
+                    .kiri-footer {
+                        margin-bottom: 30px;
+
+                        .row {
+                            .col {
+                                display: block;
+                                margin-bottom: 10px;
+
+                                .title {
+                                    h1 {
+                                        font-size: 25px;
+                                        color: white;
+                                    }
+                                }
+
+                                ul {
+                                    li {
+                                        display: flex;
+                                        list-style-type: none;
+                                        align-items: center;
+
+                                        p {
+                                            margin-bottom: 2px;
+                                            font-weight: 300;
+                                            font-size: 15px;
+                                            color: white;
+                                        }
+
+                                        svg {
+                                            margin-right: 7px;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.copyright {
+    background-color: $second;
+
+    p {
+        text-align: center;
+        padding: 20px 0px;
+        margin-bottom: 0;
+        color: white;
+    }
+}

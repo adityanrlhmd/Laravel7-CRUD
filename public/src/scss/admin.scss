@@ -1,0 +1,520 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@600;900&display=swap');
+
+$background: #F6F8FC;
+$primary: #2D9CDB;
+$second: #555555;
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: $background;
+    font-family: 'Nunito Sans';
+}
+
+header {
+    background-color: white;
+    color: black;
+    box-shadow: 4px 4px 9px 1px rgba(133, 133, 133, 0.25);
+
+    .navbar {
+        padding: 0;
+
+        .container-fluid {
+            width: 78%;
+            color: black;
+
+            .navbar-brand {
+                img {
+                    width: 90px;
+                }
+            }
+
+            .collapse {
+                padding: 0;
+
+                ul {
+                    padding: 0;
+
+                    li {
+                        padding: 0;
+
+                        a {
+                            color: black;
+                            text-decoration: none;
+
+                            img {
+                                width: 35px;
+                            }
+                        }
+
+                        &:not(:last-child) {
+                            margin-right: 10px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+main {
+    padding-top: 30px;
+    padding-bottom: 30px;
+
+    .container {
+        width: 78%;
+
+        .dashboard {
+            padding-bottom: 25px;
+
+            margin-bottom: 20px;
+            .title {
+                color: $second;
+                padding-bottom: 10px;
+            }
+
+            .row {
+                .col {
+                    .card {
+                        border: none;
+                        padding: 20px;
+                        box-shadow: 0 6px 8px 0 rgba(0, 0, 0, 0.2);
+
+                        .d-flex {
+                            .tr {
+                                background-color: yellow;
+                                padding: 8px;
+                                border-radius: 30px;
+                                margin-right: 10px;
+
+                                img {
+                                    color: white;
+                                }
+                            }
+
+                            .us {
+                                background-color: rgb(209, 125, 137);
+                                padding: 8px;
+                                border-radius: 30px;
+                                margin-right: 10px;
+
+                                img {
+                                    color: white;
+                                }
+                            }
+
+                            .dk {
+                                background-color: rgb(63, 177, 107);
+                                padding: 8px;
+                                border-radius: 30px;
+                                margin-right: 10px;
+
+                                img {
+                                    color: white;
+                                }
+                            }
+                        }
+
+                        .text-center {
+                            padding: 20px;
+
+                            h1 {
+                                font-size: 55px;
+                                font-weight: 900;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .transaksi {
+            margin-bottom: 20px;
+            .title {
+                color: $second;
+                padding-bottom: 10px;
+            }
+
+            .table {
+                thead {
+                    background-color: rgb(225, 240, 245);
+
+                    tr {
+                        th {
+                            padding-top: 15px;
+                            padding-bottom: 15px;
+                            font-weight: 500;
+                            text-align: center;
+                        }
+                    }
+                }
+
+                tbody {
+                    background-color: white;
+
+                    tr {
+                        td {
+                            color: gray;
+                            font-size: 14px;
+                            text-align: center;
+
+                            .selesai {
+                                margin-top: -3px;
+                                background-color: rgb(63, 177, 107);
+                                padding-left: 5px;
+                                padding-right: 5px;
+                                border-radius: 5px;
+
+                                p {
+                                    padding-top: 3px;
+                                    padding-bottom: 3px;
+                                    text-align: center;
+                                    color: white;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .dokter {
+            margin-bottom: 20px;
+            .title {
+                color: $second;
+                padding-bottom: 10px;
+            }
+
+            .table {
+                thead {
+                    background-color: rgb(225, 240, 245);
+
+                    tr {
+                        th {
+                            padding-top: 15px;
+                            padding-bottom: 15px;
+                            font-weight: 500;
+                            text-align: center;
+                        }
+                    }
+                }
+
+                tbody {
+                    background-color: white;
+
+                    tr {
+                        &:not(:first-child) {
+                            background-color: $background;
+                        }
+
+                        td {
+                            color: $second;
+                            font-size: 13px;
+                            text-align: center;
+
+                            .delete {
+                                // margin-top: -3px;
+                                // background-color: rgb(63, 177, 107);
+                                padding: 10px 7.5px 10px 7.5px;
+                                width: 38px;
+                                border-radius: 30px;
+
+                                svg {
+                                    padding-top: 3px;
+                                    padding-bottom: 3px;
+                                    text-align: center;
+                                    color: white;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .user {
+            margin-bottom: 20px;
+            .title {
+                color: $second;
+                padding-bottom: 10px;
+            }
+
+            .table {
+                thead {
+                    background-color: rgb(225, 240, 245);
+
+                    tr {
+                        th {
+                            padding-top: 15px;
+                            padding-bottom: 15px;
+                            font-weight: 500;
+                            text-align: center;
+                        }
+                    }
+                }
+
+                tbody {
+                    background-color: white;
+
+                    tr {
+                        &:not(:first-child) {
+                            background-color: $background;
+                        }
+
+                        td {
+                            color: $second;
+                            font-size: 13px;
+                            text-align: center;
+
+                            .delete {
+                                // margin-top: -3px;
+                                // background-color: rgb(63, 177, 107);
+                                padding: 10px 7.5px 10px 7.5px;
+                                width: 38px;
+                                border-radius: 30px;
+
+                                svg {
+                                    padding-top: 3px;
+                                    padding-bottom: 3px;
+                                    text-align: center;
+                                    color: white;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .anggota {
+            margin-bottom: 20px;
+            .title {
+                color: $second;
+                padding-bottom: 10px;
+            }
+
+            .row {
+                .col {
+                    .card {
+                        background-color: transparent;
+                        border: none;
+
+                        img {
+                            width: 100px;
+                            border-radius: 100%;
+                        }
+
+                        .card-body {
+                            h6 {
+                                margin: 0;
+                                color: rgb(82, 80, 80);
+                            }
+
+                            p {
+                                font-size: 12px;
+                                margin: 0;
+                                color: $second;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 576px) {
+    main{
+        .container{
+            width: 90%;
+        }
+    }
+}
+
+footer {
+    img {
+        margin-bottom: -1px;
+    }
+
+    .footer {
+        background-color: $primary;
+
+        .container {
+            width: 78%;
+
+            .wrap1 {
+                // display: grid;
+                // grid-template-columns: 1fr 1fr 1fr;
+
+                .kanan-footer {
+                    .title {
+                        h1 {
+                            font-size: 25px;
+                            color: white;
+                        }
+                    }
+
+                    form {
+                        margin-bottom: 120px;
+
+                        div {
+                            margin-bottom: 10px;
+
+                            label {
+                                color: white;
+                            }
+                        }
+
+                        .btn {
+                            float: right;
+                            margin-top: 25px;
+                            border-radius: 100px;
+                            background-color: $second;
+                            color: white;
+                            padding: 5px 54px;
+                        }
+                    }
+                }
+
+                .kiri-footer {
+                    margin-bottom: 30px;
+
+                    .row {
+                        .col {
+                            display: block;
+                            margin-bottom: 10px;
+
+                            .title {
+                                h1 {
+                                    font-size: 25px;
+                                    color: white;
+                                }
+                            }
+
+                            ul {
+                                li {
+                                    display: flex;
+                                    list-style-type: none;
+                                    align-items: center;
+
+                                    p {
+                                        margin-bottom: 2px;
+                                        font-weight: 300;
+                                        font-size: 15px;
+                                        color: white;
+                                    }
+
+                                    svg {
+                                        margin-right: 7px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and(max-width: 576px) {
+    footer {
+        img {
+            margin-bottom: -1px;
+        }
+
+        .footer {
+            background-color: $primary;
+
+            .container {
+                width: 78%;
+
+                .wrap1 {
+                    // display: grid;
+                    // grid-template-columns: 1fr 1fr 1fr;
+
+                    .kanan-footer {
+                        .title {
+                            h1 {
+                                font-size: 25px;
+                                color: white;
+                            }
+                        }
+
+                        form {
+                            margin-bottom: 120px;
+
+                            div {
+                                margin-bottom: 10px;
+
+                                label {
+                                    color: white;
+                                }
+                            }
+
+                            .btn {
+                                float: right;
+                                width: 100%;
+                                margin-top: 25px;
+                                border-radius: 100px;
+                                background-color: $second;
+                                color: white;
+                                padding: 5px 54px;
+                            }
+                        }
+                    }
+
+                    .kiri-footer {
+                        margin-bottom: 30px;
+
+                        .row {
+                            .col {
+                                display: block;
+                                margin-bottom: 10px;
+
+                                .title {
+                                    h1 {
+                                        font-size: 25px;
+                                        color: white;
+                                    }
+                                }
+
+                                ul {
+                                    li {
+                                        display: flex;
+                                        list-style-type: none;
+                                        align-items: center;
+
+                                        p {
+                                            margin-bottom: 2px;
+                                            font-weight: 300;
+                                            font-size: 15px;
+                                            color: white;
+                                        }
+
+                                        svg {
+                                            margin-right: 7px;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.copyright {
+    background-color: $second;
+
+    p {
+        text-align: center;
+        padding: 20px 0px;
+        margin-bottom: 0;
+        color: white;
+    }
+}

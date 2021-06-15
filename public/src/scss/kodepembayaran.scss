@@ -1,0 +1,398 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@600&display=swap');
+
+$background: #F6F8FC;
+$primary: #2D9CDB;
+$second: #555555;
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: $background;
+    font-family: 'Nunito Sans';
+}
+
+header {
+    background-color: white;
+    color: black;
+    box-shadow   : 4px 4px 9px 1px rgba(133, 133, 133, 0.25);
+
+    .navbar {
+        .container-fluid {
+            width: 78%;
+            color: black;
+
+            .navbar-brand {
+                img {
+                    width: 90px;
+                }
+            }
+
+            .collapse {
+                ul {
+                    li {
+                        a {
+                            color: black;
+                            text-decoration: none;
+                        }
+
+                        .logout {
+                            background-color: $primary;
+                            color: white;
+                        }
+
+                        &:not(:last-child) {
+                            margin-right: 30px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+main {
+    .container {
+        width: 580px;
+        padding-top: 150px;
+
+        .card {
+            padding: 40px;
+            width: 100%;
+            border: none;
+            border-radius: 20px;
+            box-shadow: 0 6px 8px 0 rgba(0, 0, 0, 0.2);
+
+            .up {
+                margin-bottom: 20px;
+                .total {
+                    border-bottom: 1px solid rgb(177, 174, 174);
+                    margin-bottom: 7px;
+
+                    .d-flex {
+                        .harga {
+                            color: $primary;
+                        }
+                    }
+                }
+
+                .waktu {
+                    .d-flex {
+                        .waktu-isi {
+                            text-align: right;
+
+                            h6 {
+                                padding: 0;
+                                margin: 0;
+                                color: $primary;
+                            }
+
+                            label {
+                                font-size: 12px;
+                                color: $second;
+                                padding: 0;
+                                margin: 0;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .center {
+                margin-bottom: 50px;
+                img {
+                    width: 100px;
+                }
+
+                .label {
+                    font-size: 14px;
+                    color: $second;
+                    margin: 0;
+                    margin-left: 40px;
+                }
+
+                .kode {
+                    color: $primary;
+                    // font-size: 20px;
+                    margin: 0;
+                    margin-left: 40px;
+                    // font-weight: bold;
+                }
+            }
+
+            .btn {
+                color: white;
+                background-color: $primary;
+                width: 100%;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 576px) {
+    main {
+        .container {
+            width: 90%;
+            padding-top: 150px;
+    
+            .card {
+                padding: 40px;
+                width: 100%;
+                border: none;
+                border-radius: 20px;
+                box-shadow: 0 6px 8px 0 rgba(0, 0, 0, 0.2);
+    
+                .up {
+                    margin-bottom: 20px;
+                    .total {
+                        border-bottom: 1px solid rgb(177, 174, 174);
+                        margin-bottom: 7px;
+    
+                        .d-flex {
+                            .harga {
+                                color: $primary;
+                            }
+                        }
+                    }
+    
+                    .waktu {
+                        .d-flex {
+                            .waktu-isi {
+                                text-align: right;
+    
+                                h6 {
+                                    font-size: 15px;
+                                    padding: 0;
+                                    margin: 0;
+                                    color: $primary;
+                                }
+    
+                                label {
+                                    font-size: 11.5px;
+                                    color: $second;
+                                    padding: 0;
+                                    margin: 0;
+                                }
+                            }
+                        }
+                    }
+                }
+    
+                .center {
+                    margin-bottom: 50px;
+                    img {
+                        width: 100px;
+                    }
+    
+                    .label {
+                        font-size: 14px;
+                        color: $second;
+                        margin: 0;
+                        margin-left: 40px;
+                    }
+    
+                    .kode {
+                        color: $primary;
+                        // font-size: 20px;
+                        margin: 0;
+                        margin-left: 40px;
+                        // font-weight: bold;
+                    }
+                }
+    
+                .btn {
+                    color: white;
+                    background-color: $primary;
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
+
+footer {
+    img {
+        margin-bottom: -1px;
+    }
+
+    .footer {
+        background-color: $primary;
+
+        .container {
+            width: 78%;
+
+            .wrap1 {
+                // display: grid;
+                // grid-template-columns: 1fr 1fr 1fr;
+
+                .kanan-footer {
+                    .title {
+                        h1 {
+                            font-size: 25px;
+                            color: white;
+                        }
+                    }
+
+                    form {
+                        margin-bottom: 120px;
+
+                        div {
+                            margin-bottom: 10px;
+
+                            label {
+                                color: white;
+                            }
+                        }
+
+                        .btn {
+                            float: right;
+                            margin-top: 25px;
+                            border-radius: 100px;
+                            background-color: $second;
+                            color: white;
+                            padding: 5px 54px;
+                        }
+                    }
+                }
+
+                .kiri-footer {
+                    margin-bottom: 30px;
+
+                    .row {
+                        .col {
+                            display: block;
+                            margin-bottom: 10px;
+
+                            .title {
+                                h1 {
+                                    font-size: 25px;
+                                    color: white;
+                                }
+                            }
+
+                            ul {
+                                li {
+                                    display: flex;
+                                    list-style-type: none;
+                                    align-items: center;
+
+                                    p {
+                                        margin-bottom: 2px;
+                                        font-weight: 300;
+                                        font-size: 15px;
+                                        color: white;
+                                    }
+
+                                    svg {
+                                        margin-right: 7px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and(max-width: 576px) {
+    footer {
+        img {
+            margin-bottom: -1px;
+        }
+
+        .footer {
+            background-color: $primary;
+
+            .container {
+                width: 78%;
+
+                .wrap1 {
+                    // display: grid;
+                    // grid-template-columns: 1fr 1fr 1fr;
+
+                    .kanan-footer {
+                        .title {
+                            h1 {
+                                font-size: 25px;
+                                color: white;
+                            }
+                        }
+
+                        form {
+                            margin-bottom: 120px;
+
+                            div {
+                                margin-bottom: 10px;
+
+                                label {
+                                    color: white;
+                                }
+                            }
+
+                            .btn {
+                                float: right;
+                                width: 100%;
+                                margin-top: 25px;
+                                border-radius: 100px;
+                                background-color: $second;
+                                color: white;
+                                padding: 5px 54px;
+                            }
+                        }
+                    }
+
+                    .kiri-footer {
+                        margin-bottom: 30px;
+
+                        .row {
+                            .col {
+                                display: block;
+                                margin-bottom: 10px;
+
+                                .title {
+                                    h1 {
+                                        font-size: 25px;
+                                        color: white;
+                                    }
+                                }
+
+                                ul {
+                                    li {
+                                        display: flex;
+                                        list-style-type: none;
+                                        align-items: center;
+
+                                        p {
+                                            margin-bottom: 2px;
+                                            font-weight: 300;
+                                            font-size: 15px;
+                                            color: white;
+                                        }
+
+                                        svg {
+                                            margin-right: 7px;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.copyright {
+    background-color: $second;
+
+    p {
+        text-align   : center;
+        padding      : 20px 0px;
+        margin-bottom: 0;
+        color        : white;
+    }
+}

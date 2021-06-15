@@ -1,0 +1,432 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@600&display=swap");
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background-color: #F6F8FC;
+  font-family: 'Nunito Sans';
+}
+
+header {
+  background-color: white;
+  color: black;
+  -webkit-box-shadow: 4px 4px 9px 1px rgba(133, 133, 133, 0.25);
+          box-shadow: 4px 4px 9px 1px rgba(133, 133, 133, 0.25);
+}
+
+header .navbar .container-fluid {
+  width: 78%;
+  color: black;
+}
+
+header .navbar .container-fluid .navbar-brand img {
+  width: 90px;
+}
+
+header .navbar .container-fluid .collapse ul li a {
+  color: black;
+  text-decoration: none;
+}
+
+header .navbar .container-fluid .collapse ul li .logout {
+  background-color: #2D9CDB;
+  color: white;
+}
+
+header .navbar .container-fluid .collapse ul li:not(:last-child) {
+  margin-right: 30px;
+}
+
+main {
+  padding-top: 100px;
+}
+
+main .container {
+  width: 78%;
+}
+
+main .container .row .kiri {
+  margin-bottom: 30px;
+}
+
+main .container .row .kiri .card {
+  padding: 50px;
+  border: none;
+}
+
+main .container .row .kiri .card .atas {
+  margin: 0 auto;
+}
+
+main .container .row .kiri .card .atas img {
+  margin-bottom: 30px;
+  min-width: 20px;
+  width: 100%;
+  max-width: 220px;
+}
+
+main .container .row .kiri .card .card-body ul {
+  list-style-type: none;
+  padding: 0;
+  margin-bottom: 120px;
+}
+
+main .container .row .kiri .card .card-body ul li {
+  margin-bottom: 15px;
+}
+
+main .container .row .kiri .card .card-body ul li p {
+  margin: 0;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 20px;
+}
+
+main .container .row .kiri .card .card-body ul li .label {
+  font-size: 14px;
+  color: #555555;
+}
+
+main .container .row .kiri .card .card-body ul li .isi {
+  font-weight: 600;
+}
+
+main .container .row .kiri .card .card-body .btn {
+  background-color: #2D9CDB;
+  border: 1px solid #2D9CDB;
+  color: white;
+  width: 100%;
+}
+
+main .container .row .kiri .card .card-body .btn:hover {
+  background-color: rgba(255, 255, 255, 0);
+  color: #2D9CDB;
+}
+
+main .container .row .kanan .card {
+  border: none;
+}
+
+main .container .row .kanan .card .title {
+  background-color: #2D9CDB;
+  color: white;
+  padding: 13px;
+  padding-left: 18px;
+  margin-bottom: 20px;
+}
+
+main .container .row .kanan .card .title img {
+  width: 14px;
+  height: 14px;
+  border-radius: 100%;
+  margin-right: 15px;
+}
+
+main .container .row .kanan .card .title p {
+  margin: 0;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 20px;
+}
+
+main .container .row .kanan .card .chat {
+  width: 90%;
+}
+
+main .container .row .kanan .card .chat .row .right {
+  background-color: #2D9CDB;
+  color: white;
+  padding: 10px 16px;
+  border-radius: 10px;
+}
+
+main .container .row .kanan .card .chat .row .right p {
+  margin: 0;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 20px;
+}
+
+main .container .row .kanan .card .chat .row .right-2 {
+  background-color: #2D9CDB;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 10px;
+}
+
+main .container .row .kanan .card .chat .row .right-2 p {
+  color: rgba(230, 227, 227, 0);
+  margin: 0;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 20px;
+}
+
+main .container .row .kanan .card .chat .row .right-3 {
+  background-color: #2D9CDB;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 10px;
+}
+
+main .container .row .kanan .card .chat .row .right-3 p {
+  color: rgba(128, 128, 128, 0);
+  margin: 0;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 20px;
+}
+
+main .container .row .kanan .card .chat .row .left {
+  background-color: #d4d3d3;
+  color: black;
+  padding: 10px 16px;
+  border-radius: 10px;
+}
+
+main .container .row .kanan .card .chat .row .left p {
+  margin: 0;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 20px;
+}
+
+main .container .row .kanan .card .chat .row .left-2 {
+  background-color: #d4d3d3;
+  color: black;
+  padding: 10px 16px;
+  border-radius: 10px;
+}
+
+main .container .row .kanan .card .chat .row .left-2 p {
+  color: rgba(128, 128, 128, 0);
+  margin: 0;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 20px;
+}
+
+main .container .row .kanan .card .chat .row .left-3 {
+  background-color: #d4d3d3;
+  color: black;
+  padding: 10px 16px;
+  border-radius: 10px;
+}
+
+main .container .row .kanan .card .chat .row .left-3 p {
+  color: rgba(128, 128, 128, 0);
+  margin: 0;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 20px;
+}
+
+main .container .row .kanan .card .chat .row .left-4 {
+  background-color: #d4d3d3;
+  color: black;
+  padding: 10px 16px;
+  border-radius: 10px;
+}
+
+main .container .row .kanan .card .chat .row .left-4 p {
+  color: rgba(128, 128, 128, 0);
+  margin: 0;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 20px;
+}
+
+main .container .row .kanan .card .card-body {
+  background-color: #d4d3d3;
+}
+
+main .container .row .kanan .card .card-body .d-flex .fileUpload {
+  position: relative;
+  overflow: hidden;
+  margin-right: 10px;
+}
+
+main .container .row .kanan .card .card-body .d-flex .fileUpload input.upload {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 0;
+  padding: 0;
+  cursor: pointer;
+  opacity: 0;
+  filter: alpha(opacity=0);
+}
+
+main .container .row .kanan .card .card-body .d-flex button {
+  background-color: rgba(255, 235, 205, 0);
+  padding: 0 5px;
+}
+
+main .container .row .kanan .card .card-body .d-flex input {
+  border-radius: 30px;
+}
+
+@media screen and (max-width: 576px) {
+  main .container {
+    width: 90%;
+  }
+}
+
+footer img {
+  margin-bottom: -1px;
+}
+
+footer .footer {
+  background-color: #2D9CDB;
+}
+
+footer .footer .container {
+  width: 78%;
+}
+
+footer .footer .container .wrap1 .kanan-footer .title h1 {
+  font-size: 25px;
+  color: white;
+}
+
+footer .footer .container .wrap1 .kanan-footer form {
+  margin-bottom: 120px;
+}
+
+footer .footer .container .wrap1 .kanan-footer form div {
+  margin-bottom: 10px;
+}
+
+footer .footer .container .wrap1 .kanan-footer form div label {
+  color: white;
+}
+
+footer .footer .container .wrap1 .kanan-footer form .btn {
+  float: right;
+  margin-top: 25px;
+  border-radius: 100px;
+  background-color: #555555;
+  color: white;
+  padding: 5px 54px;
+}
+
+footer .footer .container .wrap1 .kiri-footer {
+  margin-bottom: 30px;
+}
+
+footer .footer .container .wrap1 .kiri-footer .row .col {
+  display: block;
+  margin-bottom: 10px;
+}
+
+footer .footer .container .wrap1 .kiri-footer .row .col .title h1 {
+  font-size: 25px;
+  color: white;
+}
+
+footer .footer .container .wrap1 .kiri-footer .row .col ul li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style-type: none;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+footer .footer .container .wrap1 .kiri-footer .row .col ul li p {
+  margin-bottom: 2px;
+  font-weight: 300;
+  font-size: 15px;
+  color: white;
+}
+
+footer .footer .container .wrap1 .kiri-footer .row .col ul li svg {
+  margin-right: 7px;
+}
+
+@media screen and (max-width: 576px) {
+  footer img {
+    margin-bottom: -1px;
+  }
+  footer .footer {
+    background-color: #2D9CDB;
+  }
+  footer .footer .container {
+    width: 78%;
+  }
+  footer .footer .container .wrap1 .kanan-footer .title h1 {
+    font-size: 25px;
+    color: white;
+  }
+  footer .footer .container .wrap1 .kanan-footer form {
+    margin-bottom: 120px;
+  }
+  footer .footer .container .wrap1 .kanan-footer form div {
+    margin-bottom: 10px;
+  }
+  footer .footer .container .wrap1 .kanan-footer form div label {
+    color: white;
+  }
+  footer .footer .container .wrap1 .kanan-footer form .btn {
+    float: right;
+    width: 100%;
+    margin-top: 25px;
+    border-radius: 100px;
+    background-color: #555555;
+    color: white;
+    padding: 5px 54px;
+  }
+  footer .footer .container .wrap1 .kiri-footer {
+    margin-bottom: 30px;
+  }
+  footer .footer .container .wrap1 .kiri-footer .row .col {
+    display: block;
+    margin-bottom: 10px;
+  }
+  footer .footer .container .wrap1 .kiri-footer .row .col .title h1 {
+    font-size: 25px;
+    color: white;
+  }
+  footer .footer .container .wrap1 .kiri-footer .row .col ul li {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    list-style-type: none;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  footer .footer .container .wrap1 .kiri-footer .row .col ul li p {
+    margin-bottom: 2px;
+    font-weight: 300;
+    font-size: 15px;
+    color: white;
+  }
+  footer .footer .container .wrap1 .kiri-footer .row .col ul li svg {
+    margin-right: 7px;
+  }
+}
+
+.copyright {
+  background-color: #555555;
+}
+
+.copyright p {
+  text-align: center;
+  padding: 20px 0px;
+  margin-bottom: 0;
+  color: white;
+}
+/*# sourceMappingURL=konsultasi.css.map */

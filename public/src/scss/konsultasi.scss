@@ -1,0 +1,509 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@600&display=swap');
+
+$background: #F6F8FC;
+$primary: #2D9CDB;
+$second: #555555;
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: $background;
+    font-family: 'Nunito Sans';
+}
+
+header {
+    background-color: white;
+    color: black;
+    box-shadow: 4px 4px 9px 1px rgba(133, 133, 133, 0.25);
+
+    .navbar {
+        .container-fluid {
+            width: 78%;
+            color: black;
+
+            .navbar-brand {
+                img {
+                    width: 90px;
+                }
+            }
+
+            .collapse {
+                ul {
+                    li {
+                        a {
+                            color: black;
+                            text-decoration: none;
+                        }
+
+                        .logout {
+                            background-color: $primary;
+                            color: white;
+                        }
+
+                        &:not(:last-child) {
+                            margin-right: 30px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+main {
+    padding-top: 100px;
+
+    .container {
+        width: 78%;
+
+        .row {
+            .kiri {
+                margin-bottom: 30px;
+
+                .card {
+                    padding: 50px;
+                    border: none;
+
+                    .atas {
+                        margin: 0 auto;
+
+                        img {
+                            margin-bottom: 30px;
+                            min-width: 20px;
+                            width:  100%;
+                            max-width: 220px;
+                            
+                        }
+                    }
+
+                    .card-body {
+                        ul {
+                            list-style-type: none;
+                            padding: 0;
+                            margin-bottom: 120px;
+
+                            li {
+                                margin-bottom: 15px;
+
+                                p {
+                                    margin: 0;
+                                    font-style: normal;
+                                    font-weight: 300;
+                                    font-size: 15px;
+                                    line-height: 20px;
+                                }
+
+                                .label {
+                                    font-size: 14px;
+                                    color: $second;
+                                }
+
+                                .isi {
+                                    font-weight: 600;
+                                }
+                            }
+                        }
+
+                        .btn {
+                            background-color: $primary;
+                            border: 1px solid $primary;
+                            color: white;
+                            width: 100%;
+
+                            &:hover {
+                                background-color: rgba(255, 255, 255, 0);
+                                color: $primary;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .kanan {
+                .card {
+                    border: none;
+
+                    .title {
+                        background-color: $primary;
+                        color: white;
+                        padding: 13px;
+                        padding-left: 18px;
+                        margin-bottom: 20px;
+
+                        img {
+                            width: 14px;
+                            height: 14px;
+                            border-radius: 100%;
+                            margin-right: 15px;
+                        }
+
+                        p {
+                            margin: 0;
+                            font-style: normal;
+                            font-weight: 300;
+                            font-size: 15px;
+                            line-height: 20px;
+                        }
+                    }
+
+                    .chat {
+                        width: 90%;
+
+                        .row {
+                            .right {
+                                // text-align: center;
+                                background-color: $primary;
+                                color: white;
+                                padding: 10px 16px;
+                                border-radius: 10px;
+
+                                p {
+                                    margin: 0;
+                                    font-style: normal;
+                                    font-weight: 300;
+                                    font-size: 15px;
+                                    line-height: 20px;
+                                }
+                            }
+
+                            .right-2 {
+                                // text-align: center;
+                                background-color: $primary;
+                                color: white;
+                                padding: 5px 10px;
+                                border-radius: 10px;
+
+                                p {
+                                    color: rgba(230, 227, 227, 0);
+                                    margin: 0;
+                                    font-style: normal;
+                                    font-weight: 300;
+                                    font-size: 15px;
+                                    line-height: 20px;
+                                }
+                            }
+
+                            .right-3 {
+                                // text-align: center;
+                                background-color: $primary;
+                                color: white;
+                                padding: 5px 10px;
+                                border-radius: 10px;
+
+                                p {
+                                    color: rgba(128, 128, 128, 0);
+                                    margin: 0;
+                                    font-style: normal;
+                                    font-weight: 300;
+                                    font-size: 15px;
+                                    line-height: 20px;
+                                }
+                            }
+
+                            .left {
+                                // text-align: center;
+                                background-color: rgb(212, 211, 211);
+                                color: black;
+                                padding: 10px 16px;
+                                border-radius: 10px;
+
+                                p {
+                                    margin: 0;
+                                    font-style: normal;
+                                    font-weight: 300;
+                                    font-size: 15px;
+                                    line-height: 20px;
+                                }
+                            }
+
+                            .left-2 {
+                                // text-align: center;
+                                background-color: rgb(212, 211, 211);
+                                color: black;
+                                padding: 10px 16px;
+                                border-radius: 10px;
+
+                                p {
+                                    color: rgba(128, 128, 128, 0);
+                                    margin: 0;
+                                    font-style: normal;
+                                    font-weight: 300;
+                                    font-size: 15px;
+                                    line-height: 20px;
+                                }
+                            }
+
+                            .left-3 {
+                                // text-align: center;
+                                background-color: rgb(212, 211, 211);
+                                color: black;
+                                padding: 10px 16px;
+                                border-radius: 10px;
+
+                                p {
+                                    color: rgba(128, 128, 128, 0);
+                                    margin: 0;
+                                    font-style: normal;
+                                    font-weight: 300;
+                                    font-size: 15px;
+                                    line-height: 20px;
+                                }
+                            }
+
+                            .left-4 {
+                                // text-align: center;
+                                background-color: rgb(212, 211, 211);
+                                color: black;
+                                padding: 10px 16px;
+                                border-radius: 10px;
+
+                                p {
+                                    color: rgba(128, 128, 128, 0);
+                                    margin: 0;
+                                    font-style: normal;
+                                    font-weight: 300;
+                                    font-size: 15px;
+                                    line-height: 20px;
+                                }
+                            }
+                        }
+                    }
+
+                    .card-body {
+                        background-color: rgb(212, 211, 211);
+
+                        .d-flex {
+                            .fileUpload {
+                                position: relative;
+                                overflow: hidden;
+                                // margin: 10px;
+                                margin-right: 10px;
+                            }
+
+                            .fileUpload input.upload {
+                                position: absolute;
+                                top: 0;
+                                right: 0;
+                                margin: 0;
+                                padding: 0;
+                                // font-size: 20px;
+                                cursor: pointer;
+                                opacity: 0;
+                                filter: alpha(opacity=0);
+                            }
+
+                            button {
+                                background-color: rgba(255, 235, 205, 0);
+                                padding: 0 5px;
+
+                                svg {
+                                    // background-color: black;99999
+                                }
+                            }
+
+                            input {
+                                border-radius: 30px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 576px) {
+    main{
+        .container{
+            width: 90%;
+        }
+    }
+}
+
+footer {
+    img {
+        margin-bottom: -1px;
+    }
+
+    .footer {
+        background-color: $primary;
+
+        .container {
+            width: 78%;
+
+            .wrap1 {
+                // display: grid;
+                // grid-template-columns: 1fr 1fr 1fr;
+
+                .kanan-footer {
+                    .title {
+                        h1 {
+                            font-size: 25px;
+                            color: white;
+                        }
+                    }
+
+                    form {
+                        margin-bottom: 120px;
+
+                        div {
+                            margin-bottom: 10px;
+
+                            label {
+                                color: white;
+                            }
+                        }
+
+                        .btn {
+                            float: right;
+                            margin-top: 25px;
+                            border-radius: 100px;
+                            background-color: $second;
+                            color: white;
+                            padding: 5px 54px;
+                        }
+                    }
+                }
+
+                .kiri-footer {
+                    margin-bottom: 30px;
+
+                    .row {
+                        .col {
+                            display: block;
+                            margin-bottom: 10px;
+
+                            .title {
+                                h1 {
+                                    font-size: 25px;
+                                    color: white;
+                                }
+                            }
+
+                            ul {
+                                li {
+                                    display: flex;
+                                    list-style-type: none;
+                                    align-items: center;
+
+                                    p {
+                                        margin-bottom: 2px;
+                                        font-weight: 300;
+                                        font-size: 15px;
+                                        color: white;
+                                    }
+
+                                    svg {
+                                        margin-right: 7px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and(max-width: 576px) {
+    footer {
+        img {
+            margin-bottom: -1px;
+        }
+
+        .footer {
+            background-color: $primary;
+
+            .container {
+                width: 78%;
+
+                .wrap1 {
+                    // display: grid;
+                    // grid-template-columns: 1fr 1fr 1fr;
+
+                    .kanan-footer {
+                        .title {
+                            h1 {
+                                font-size: 25px;
+                                color: white;
+                            }
+                        }
+
+                        form {
+                            margin-bottom: 120px;
+
+                            div {
+                                margin-bottom: 10px;
+
+                                label {
+                                    color: white;
+                                }
+                            }
+
+                            .btn {
+                                float: right;
+                                width: 100%;
+                                margin-top: 25px;
+                                border-radius: 100px;
+                                background-color: $second;
+                                color: white;
+                                padding: 5px 54px;
+                            }
+                        }
+                    }
+
+                    .kiri-footer {
+                        margin-bottom: 30px;
+
+                        .row {
+                            .col {
+                                display: block;
+                                margin-bottom: 10px;
+
+                                .title {
+                                    h1 {
+                                        font-size: 25px;
+                                        color: white;
+                                    }
+                                }
+
+                                ul {
+                                    li {
+                                        display: flex;
+                                        list-style-type: none;
+                                        align-items: center;
+
+                                        p {
+                                            margin-bottom: 2px;
+                                            font-weight: 300;
+                                            font-size: 15px;
+                                            color: white;
+                                        }
+
+                                        svg {
+                                            margin-right: 7px;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.copyright {
+    background-color: $second;
+
+    p {
+        text-align: center;
+        padding: 20px 0px;
+        margin-bottom: 0;
+        color: white;
+    }
+}
