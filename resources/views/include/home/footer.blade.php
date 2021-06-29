@@ -7,20 +7,21 @@
                     <div class="title">
                         <h1>Kritik dan Saran</h1>
                     </div>
-                    <form action="">
+                    <form method="post" action="{{ route('')  }}" enctype="multipart/form-data">
+                        @csrf
                         <div>
                             <label class="form-label">Nama Lengkap</label>
-                            <input type="text" class="form-control" placeholder="Masukan nama lengkap">
+                            <input type="text" class="form-control" id="name" name="name" placeholder="Masukan nama lengkap">
                         </div>
                         <div>
                             <label class="form-label">Email</label>
-                            <input type="email" class="form-control" placeholder="Masukan alamat email">
+                            <input type="email" class="form-control" id="email" name="email" placeholder="Masukan alamat email">
                         </div>
                         <div>
-                            <label class="form-label">Kriitik dan Saran</label>
-                            <textarea class="form-control" placeholder="Masukan kritik dan saran" rows="3"></textarea>
+                            <label class="form-label">Kritik dan Saran</label>
+                            <textarea class="form-control" id="text" name="text" placeholder="Masukan kritik dan saran" rows="3"></textarea>
                         </div>
-                        <button class="btn">Kirim</button>
+                        <button type="submit" class="btn">Kirim</button>
                     </form>
                 </div>
                 <div class="col kiri-footer">

@@ -5,6 +5,7 @@ namespace App\Http\Controllers\Admin;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use App\Artikel;
+use App\Kritik;
 use App\Http\Requests\Admin\ArtikelRequest;
 
 class ArtikelController extends Controller
@@ -17,7 +18,8 @@ class ArtikelController extends Controller
     public function index()
     {
         $items = Artikel::all();
-        return view('page.admin.artikel.index', compact('items'));
+        $kritik = Kritik::all();
+        return view('page.admin.artikel.index', compact('items', 'kritik'));
     }
 
     /**
@@ -67,7 +69,7 @@ class ArtikelController extends Controller
     public function edit($id)
     {
         $item = Artikel::findOrFail($id);
-        return view('page.admin.artikel.edit', compact('item'));
+        return view('page.admin.artikel.update', compact('item'));
     }
 
     /**

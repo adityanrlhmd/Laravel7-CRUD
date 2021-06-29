@@ -5,6 +5,10 @@ namespace App\Http\Controllers\Home;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use App\Artikel;
+use App\Harga;
+use App\Penawaran;
+use App\Fitur;
+use App\Kritik;
 
 class DashboardController extends Controller
 {
@@ -16,10 +20,11 @@ class DashboardController extends Controller
     public function index()
     {
         $artikel = Artikel::all();
-        // $galeri = Galeri::all();
-        // $rekomendasi = Rekomendasi::all();
-        // $jadwaltv = Jadwaltv::all();
-        return view('page.home.dashboard', compact('artikel', ));
+        $penawaran = Penawaran::all();
+        $harga = Harga::all();
+        $fitur = Fitur::all();
+        $kritik = Kritik::all();
+        return view('page.home.dashboard', compact('artikel', 'penawaran', 'harga', 'fitur', 'kritik'));
     }
 
     /**

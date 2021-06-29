@@ -55,10 +55,12 @@
             </div>
             <div class="swiper-container mySwiper">
                 <div class="swiper-wrapper">
-                    <div class="swiper-slide"><img src="./src/img/Promo1.png" alt=""></div>
-                    <div class="swiper-slide"><img src="./src/img/Promo2.png" alt=""></div>
+                    @foreach ($penawaran as $item)
+                    <div class="swiper-slide"><img src="{{Storage::url($item->image)}}" alt=""></div>
+                    @endforeach
+                    {{-- <div class="swiper-slide"><img src="./src/img/Promo2.png" alt=""></div>
                     <div class="swiper-slide"><img src="./src/img/Promo3.png" alt=""></div>
-                    <div class="swiper-slide"><img src="./src/img/Promo2.png" alt=""></div>
+                    <div class="swiper-slide"><img src="./src/img/Promo2.png" alt=""></div> --}}
                 </div>
                 <div class="swiper-pagination"></div>
             </div>
@@ -72,10 +74,12 @@
             </div>
             <div class="swiper-container mySwiper">
                 <div class="swiper-wrapper">
-                    <div class="swiper-slide"><img src="./src/img/Harga1.png" alt=""></div>
-                    <div class="swiper-slide"><img src="./src/img/Harga2.png" alt=""></div>
+                    @foreach ($harga as $item)
+                    <div class="swiper-slide"><img src="{{Storage::url($item->image)}}" alt=""></div>
+                    @endforeach
+                    {{-- <div class="swiper-slide"><img src="./src/img/Harga2.png" alt=""></div>
                     <div class="swiper-slide"><img src="./src/img/harga4.png" alt=""></div>
-                    <div class="swiper-slide"><img src="./src/img/Harga1.png" alt=""></div>
+                    <div class="swiper-slide"><img src="./src/img/Harga1.png" alt=""></div> --}}
 
                 </div>
                 <div class="swiper-pagination"></div>
@@ -153,26 +157,27 @@
             </div>
 
             <div class="list-row">
+                @foreach ($fitur as $item)
                 <div class="card1">
                     <div class="wrapper">
-                        <img src="./src/img/fitur1.svg" alt="" />
+                        <img src="{{Storage::url($item->image)}}" alt="" />
                         <div class="content">
                             <div class="wrap">
                                 <div class="title">
-                                    <h1>Konsultasi dimana saja</h1>
+                                    <h1>{{$item->title}}</h1>
                                 </div>
                                 <div class="isi">
                                     <p>
-                                        Dengan Healthy Paws, kamu dapat melakukan konsultasi
-                                        hanya dari genggaman tanganmu.
+                                        {{$item->text}}
                                     </p>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
+                @endforeach
 
-                <div class="card1">
+                {{-- <div class="card1">
                     <div class="wrapper">
                         <img src="./src/img/fitu2.svg" alt="" />
                         <div class="content">
@@ -209,7 +214,7 @@
                             </div>
                         </div>
                     </div>
-                </div>
+                </div> --}}
             </div>
         </div>
     </section>

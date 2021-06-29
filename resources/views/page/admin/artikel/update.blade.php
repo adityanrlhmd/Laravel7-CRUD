@@ -4,9 +4,9 @@
     <div class="content">
         <div class="container-fluid text-black">
             <div class="card">
-                <div class="card-header bg-success">
+                <div class="card-header ">
                     <div class="card-tittle">
-                        <h5 class="text-white">Edit Artikel</h5>
+                        <h5 class="text-white my-auto">Edit Artikel</h5>
                     </div>
                 </div>
                 <div class="card-body p-2">
@@ -24,7 +24,7 @@
                     <form method="post" action="{{ route('artikel.update', $item->id) }}" enctype="multipart/form-data">
                         @method('PUT')
                         @csrf
-                        <div class="form-group">
+                        <div class="mb-4 ">
                             <label for="image">Image</label>
                             <input type="file" class="form-control" name="image" id="image" placeholder="Enter Image">
                         </div>

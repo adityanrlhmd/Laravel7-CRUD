@@ -5,39 +5,39 @@
     <div class="sidebar-wrapper">
         <ul class="nav">
             <li class="nav-item active  ">
-                <a class="nav-link" href="./dashboard.html">
+                <a class="nav-link" href="/admin">
                     <i class="material-icons">dashboard</i>
                     <p>Dashboard</p>
                 </a>
             </li>
             <li class="nav-item ">
-                <a class="nav-link" href="./user.html">
-                    <i class="material-icons">person</i>
-                    <p>User Profile</p>
-                </a>
-            </li>
-            <li class="nav-item ">
-                <a class="nav-link" href="./tables.html">
+                <a class="nav-link" href="{{route('penawaran.index')}} ">
                     <i class="material-icons">content_paste</i>
-                    <p>Table List</p>
+                    <p>Penawaran Menarik</p>
                 </a>
             </li>
             <li class="nav-item ">
-                <a class="nav-link" href="./typography.html">
+                <a class="nav-link" href="{{route('harga.index')}}">
                     <i class="material-icons">library_books</i>
+                    <p>Harga</p>
+                </a>
+            </li>
+            <li class="nav-item ">
+                <a class="nav-link" href="{{route('artikel.index')}}  ">
+                    <i class="material-icons">person</i>
                     <p>Artikel</p>
                 </a>
             </li>
             <li class="nav-item ">
-                <a class="nav-link" href="./icons.html">
+                <a class="nav-link" href="{{route('fitur.index')}}">
                     <i class="material-icons">bubble_chart</i>
-                    <p>Icons</p>
+                    <p>Fitur</p>
                 </a>
             </li>
             <li class="nav-item ">
-                <a class="nav-link" href="./map.html">
+                <a class="nav-link" href="{{route('kritik.index')}}">
                     <i class="material-icons">location_ons</i>
-                    <p>Maps</p>
+                    <p>Kritik</p>
                 </a>
             </li>
             <li class="nav-item ">

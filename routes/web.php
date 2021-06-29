@@ -21,20 +21,21 @@ Route::prefix('/')
     ->namespace('Home')
     ->group(function () {
         Route::resource('/', 'DashboardController');
-        // Route::resource('/register', 'RegisterController');
+        Route::resource('/kritik' , 'KritikController');
         // Route::resource('/program', 'ProgramController');
         // Route::resource('/tv', 'TvController');
         // Route::resource('/berita', 'BeritaController');
     });
 
-Route::prefix('home')
+Route::prefix('admin')
     ->namespace('Admin')
     ->group(function () {
         Route::resource('/', 'DashboardController');
         Route::resource('/artikel', 'ArtikelController');
-        // Route::resource('/galeri', 'GaleriController');
-        // Route::resource('/rekomendasi', 'RekomendasiController');
-        // Route::resource('/jadwaltv', 'JadwaltvController');
+        Route::resource('/penawaran', 'PenawaranController');
+        Route::resource('/harga', 'HargaController');
+        Route::resource('/fitur', 'FiturController');
+        Route::resource('/kritik', 'KritikController');
     });
 
 Auth::routes();

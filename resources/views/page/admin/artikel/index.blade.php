@@ -8,7 +8,7 @@
                     <a class="btn btn-primary float-right my-auto" href="{{ route('artikel.create') }}">Create</a>
                 </div>
                 <div class="container">
-                    <table class="table table-striped">
+                    <table class="table table-hover">
                         <thead>
                             <tr class=" ">
                                 <th scope="col">No</th>
@@ -23,7 +23,7 @@
                                     <th scope="row">{{ $no + 1 }}</th>
                                     <td>
                                         <img src="{{ Storage::url($item->image) }}" alt="image" style="width: 150px"
-                                            class="img-thumbnail">
+                                            class=" ">
                                     </td>
                                     <td>{{ $item->text }}</td>
                                     <td>

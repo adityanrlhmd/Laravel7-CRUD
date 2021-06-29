@@ -4,6 +4,7 @@ namespace App\Http\Controllers\Admin;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
+use App\Kritik;
 
 class DashboardController extends Controller
 {
@@ -14,7 +15,8 @@ class DashboardController extends Controller
      */
     public function index()
     {
-        return view('page.admin.dashboard');
+        $kritik = Kritik::all();
+        return view('page.admin.dashboard', compact( 'kritik'));
     }
 
     /**
